@@ -29,7 +29,7 @@
         <NavigationView.MenuItems>
             <NavigationViewItem Content="JavaScript" Tag="SamplePage1" x:Name="SamplePage1Item"></NavigationViewItem>
             <NavigationViewItem Content="C#" Tag="SamplePage2" x:Name="SamplePage2Item" SelectsOnInvoked="True"></NavigationViewItem>
-            <NavigationViewItem Content="Python" Tag="BooksPage" x:Name="SamplePage3Item"></NavigationViewItem>
+            <NavigationViewItem Content="All Books" Tag="BooksPage" x:Name="SamplePage3Item"></NavigationViewItem>
         </NavigationView.MenuItems>
 
         <NavigationView.PaneCustomContent>
