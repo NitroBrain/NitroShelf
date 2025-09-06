@@ -39,6 +39,11 @@
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.4948" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.250606001" />
   </ItemGroup>
+  <ItemGroup>
+    <None Update="Views\BooksPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
 
   <!--
     Defining the "HasPackageAndPublishMenuAddedByProject" property here allows the Solution

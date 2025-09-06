@@ -226,7 +226,7 @@ namespace NitroShelf.NitroShelf_XamlTypeInfo
         
         private void InitTypeTables()
         {
-            _typeNameTable = new string[38];
+            _typeNameTable = new string[41];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -262,11 +262,14 @@ namespace NitroShelf.NitroShelf_XamlTypeInfo
             _typeNameTable[32] = "Microsoft.UI.Xaml.Controls.Control";
             _typeNameTable[33] = "NitroShelf.MainWindow";
             _typeNameTable[34] = "Microsoft.UI.Xaml.Window";
-            _typeNameTable[35] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[36] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
-            _typeNameTable[37] = "Int32";
+            _typeNameTable[35] = "NitroShelf.BooksPage";
+            _typeNameTable[36] = "Microsoft.UI.Xaml.Controls.Page";
+            _typeNameTable[37] = "Microsoft.UI.Xaml.Controls.UserControl";
+            _typeNameTable[38] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[39] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[40] = "Int32";
 
-            _typeTable = new global::System.Type[38];
+            _typeTable = new global::System.Type[41];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -302,9 +305,12 @@ namespace NitroShelf.NitroShelf_XamlTypeInfo
             _typeTable[32] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
             _typeTable[33] = typeof(global::NitroShelf.MainWindow);
             _typeTable[34] = typeof(global::Microsoft.UI.Xaml.Window);
-            _typeTable[35] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[36] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
-            _typeTable[37] = typeof(global::System.Int32);
+            _typeTable[35] = typeof(global::NitroShelf.BooksPage);
+            _typeTable[36] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
+            _typeTable[37] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
+            _typeTable[38] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[39] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[40] = typeof(global::System.Int32);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -346,7 +352,8 @@ namespace NitroShelf.NitroShelf_XamlTypeInfo
         private object Activate_28_NavigationViewItem() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItem(); }
         private object Activate_31_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
         private object Activate_33_MainWindow() { return new global::NitroShelf.MainWindow(); }
-        private object Activate_35_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_35_BooksPage() { return new global::NitroShelf.BooksPage(); }
+        private object Activate_38_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void StaticInitializer_0_XamlControlsResources() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources).TypeHandle);
         private void StaticInitializer_4_MicaBackdrop() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Media.MicaBackdrop).TypeHandle);
         private void StaticInitializer_6_MicaKind() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Composition.SystemBackdrops.MicaKind).TypeHandle);
@@ -365,8 +372,9 @@ namespace NitroShelf.NitroShelf_XamlTypeInfo
         private void StaticInitializer_29_NavigationViewItemBase() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase).TypeHandle);
         private void StaticInitializer_31_InfoBadge() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge).TypeHandle);
         private void StaticInitializer_33_MainWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::NitroShelf.MainWindow).TypeHandle);
-        private void StaticInitializer_35_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
-        private void StaticInitializer_36_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
+        private void StaticInitializer_35_BooksPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::NitroShelf.BooksPage).TypeHandle);
+        private void StaticInitializer_38_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
+        private void StaticInitializer_39_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -380,7 +388,7 @@ namespace NitroShelf.NitroShelf_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_36_IList(object instance, object item)
+        private void VectorAdd_39_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -653,10 +661,26 @@ namespace NitroShelf.NitroShelf_XamlTypeInfo
                 xamlType = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 35:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 35:   //  NitroShelf.BooksPage
+                userType = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_35_BooksPage;
+                userType.StaticInitializer = StaticInitializer_35_BooksPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 36:   //  Microsoft.UI.Xaml.Controls.Page
+                xamlType = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 37:   //  Microsoft.UI.Xaml.Controls.UserControl
+                xamlType = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 38:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_35_TreeViewNode;
-                userType.StaticInitializer = StaticInitializer_35_TreeViewNode;
+                userType.Activator = Activate_38_TreeViewNode;
+                userType.StaticInitializer = StaticInitializer_38_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -668,15 +692,15 @@ namespace NitroShelf.NitroShelf_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 36:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 39:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_36_IList;
-                userType.CollectionAdd = VectorAdd_36_IList;
+                userType.StaticInitializer = StaticInitializer_39_IList;
+                userType.CollectionAdd = VectorAdd_39_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 37:   //  Int32
+            case 40:   //  Int32
                 xamlType = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }

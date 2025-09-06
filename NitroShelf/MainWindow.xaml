@@ -16,10 +16,11 @@
     <NavigationView x:Name="nvSample"
     IsSettingsVisible="True"
     IsBackButtonVisible="Auto"
+    SelectionChanged="NavView_SelectionChanged"
     IsBackEnabled="True"
     Header="NitroShelf"
     AlwaysShowHeader="True"
-    PaneTitle="Pane Title"
+    PaneTitle="NitroShelf"
     PaneDisplayMode="Top"
     ExpandedModeThresholdWidth="500"
     SelectionFollowsFocus="Disabled"
@@ -28,7 +29,7 @@
         <NavigationView.MenuItems>
             <NavigationViewItem Content="JavaScript" Tag="SamplePage1" x:Name="SamplePage1Item"></NavigationViewItem>
             <NavigationViewItem Content="C#" Tag="SamplePage2" x:Name="SamplePage2Item" SelectsOnInvoked="True"></NavigationViewItem>
-            <NavigationViewItem Content="Python" Tag="SamplePage3" x:Name="SamplePage3Item"></NavigationViewItem>
+            <NavigationViewItem Content="Python" Tag="BooksPage" x:Name="SamplePage3Item"></NavigationViewItem>
         </NavigationView.MenuItems>
 
         <NavigationView.PaneCustomContent>
