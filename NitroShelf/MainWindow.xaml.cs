@@ -44,6 +44,7 @@ namespace NitroShelf
                 {
                     case "BooksPage":
                         NavigateToPage(typeof(BooksPage));
+                        sender.Header = "Books";
                         break;
                     default:
                         return;
