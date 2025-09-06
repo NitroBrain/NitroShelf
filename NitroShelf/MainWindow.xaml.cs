@@ -4,6 +4,7 @@ using Microsoft.UI.Xaml.Controls.Primitives;
 using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
+using Microsoft.UI.Xaml.Media.Animation;
 using Microsoft.UI.Xaml.Navigation;
 using NitroShelf;
 using System;
@@ -32,6 +33,7 @@ namespace NitroShelf
         public void NavigateToPage (Type pageYype)
         {
             contentFrame.Navigate(pageYype);
+            contentFrame.Navigate(typeof(BooksPage), null, new DrillInNavigationTransitionInfo());
         }
 
         private void NavView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
@@ -43,6 +45,8 @@ namespace NitroShelf
                     case "BooksPage":
                         NavigateToPage(typeof(BooksPage));
                         break;
+                    default:
+                        return;
                 }
             }
         }
