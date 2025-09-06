@@ -13,7 +13,32 @@
         <MicaBackdrop />
     </Window.SystemBackdrop>
 
-    <Grid>
+    <NavigationView x:Name="nvSample"
+    IsSettingsVisible="True"
+    IsBackButtonVisible="Auto"
+    IsBackEnabled="True"
+    Header="NitroShelf"
+    AlwaysShowHeader="True"
+    PaneTitle="Pane Title"
+    PaneDisplayMode="Top"
+    ExpandedModeThresholdWidth="500"
+    SelectionFollowsFocus="Disabled"
+    IsTabStop="False">
 
-    </Grid>
+        <NavigationView.MenuItems>
+            <NavigationViewItem Content="JavaScript" Tag="SamplePage1" x:Name="SamplePage1Item"></NavigationViewItem>
+            <NavigationViewItem Content="C#" Tag="SamplePage2" x:Name="SamplePage2Item" SelectsOnInvoked="True"></NavigationViewItem>
+            <NavigationViewItem Content="Python" Tag="SamplePage3" x:Name="SamplePage3Item"></NavigationViewItem>
+        </NavigationView.MenuItems>
+
+        <NavigationView.PaneCustomContent>
+            <HyperlinkButton x:Name="PaneHyperlink" Content="Add New Folder" Margin="12,0" Visibility="Visible" />
+        </NavigationView.PaneCustomContent>
+
+        <NavigationView.AutoSuggestBox>
+            <AutoSuggestBox QueryIcon="Find" AutomationProperties.Name="Search" />
+        </NavigationView.AutoSuggestBox>
+
+        <Frame x:Name="contentFrame" />
+    </NavigationView>
 </Window>

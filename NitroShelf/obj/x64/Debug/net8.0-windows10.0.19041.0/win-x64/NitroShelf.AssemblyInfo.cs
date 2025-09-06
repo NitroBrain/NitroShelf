@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NitroShelf")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f4e6e210f897dcc31e4b8d7181f30ee7f1e0873")]
 [assembly: System.Reflection.AssemblyProductAttribute("NitroShelf")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NitroShelf")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
