@@ -226,7 +226,7 @@ namespace NitroShelf.NitroShelf_XamlTypeInfo
         
         private void InitTypeTables()
         {
-            _typeNameTable = new string[41];
+            _typeNameTable = new string[44];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -265,11 +265,14 @@ namespace NitroShelf.NitroShelf_XamlTypeInfo
             _typeNameTable[35] = "NitroShelf.BooksPage";
             _typeNameTable[36] = "Microsoft.UI.Xaml.Controls.Page";
             _typeNameTable[37] = "Microsoft.UI.Xaml.Controls.UserControl";
-            _typeNameTable[38] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[39] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
-            _typeNameTable[40] = "Int32";
+            _typeNameTable[38] = "System.Collections.ObjectModel.ObservableCollection`1<NitroShelf.Book>";
+            _typeNameTable[39] = "System.Collections.ObjectModel.Collection`1<NitroShelf.Book>";
+            _typeNameTable[40] = "NitroShelf.Book";
+            _typeNameTable[41] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[42] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[43] = "Int32";
 
-            _typeTable = new global::System.Type[41];
+            _typeTable = new global::System.Type[44];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -308,9 +311,12 @@ namespace NitroShelf.NitroShelf_XamlTypeInfo
             _typeTable[35] = typeof(global::NitroShelf.BooksPage);
             _typeTable[36] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
             _typeTable[37] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
-            _typeTable[38] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[39] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
-            _typeTable[40] = typeof(global::System.Int32);
+            _typeTable[38] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::NitroShelf.Book>);
+            _typeTable[39] = typeof(global::System.Collections.ObjectModel.Collection<global::NitroShelf.Book>);
+            _typeTable[40] = typeof(global::NitroShelf.Book);
+            _typeTable[41] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[42] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[43] = typeof(global::System.Int32);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -353,7 +359,10 @@ namespace NitroShelf.NitroShelf_XamlTypeInfo
         private object Activate_31_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
         private object Activate_33_MainWindow() { return new global::NitroShelf.MainWindow(); }
         private object Activate_35_BooksPage() { return new global::NitroShelf.BooksPage(); }
-        private object Activate_38_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_38_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::NitroShelf.Book>(); }
+        private object Activate_39_Collection() { return new global::System.Collections.ObjectModel.Collection<global::NitroShelf.Book>(); }
+        private object Activate_40_Book() { return new global::NitroShelf.Book(); }
+        private object Activate_41_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void StaticInitializer_0_XamlControlsResources() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources).TypeHandle);
         private void StaticInitializer_4_MicaBackdrop() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Media.MicaBackdrop).TypeHandle);
         private void StaticInitializer_6_MicaKind() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Composition.SystemBackdrops.MicaKind).TypeHandle);
@@ -373,8 +382,11 @@ namespace NitroShelf.NitroShelf_XamlTypeInfo
         private void StaticInitializer_31_InfoBadge() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge).TypeHandle);
         private void StaticInitializer_33_MainWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::NitroShelf.MainWindow).TypeHandle);
         private void StaticInitializer_35_BooksPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::NitroShelf.BooksPage).TypeHandle);
-        private void StaticInitializer_38_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
-        private void StaticInitializer_39_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
+        private void StaticInitializer_38_ObservableCollection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.ObjectModel.ObservableCollection<global::NitroShelf.Book>).TypeHandle);
+        private void StaticInitializer_39_Collection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.ObjectModel.Collection<global::NitroShelf.Book>).TypeHandle);
+        private void StaticInitializer_40_Book() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::NitroShelf.Book).TypeHandle);
+        private void StaticInitializer_41_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
+        private void StaticInitializer_42_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -388,7 +400,19 @@ namespace NitroShelf.NitroShelf_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_39_IList(object instance, object item)
+        private void VectorAdd_38_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::NitroShelf.Book>)instance;
+            var newItem = (global::NitroShelf.Book)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_39_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::NitroShelf.Book>)instance;
+            var newItem = (global::NitroShelf.Book)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_42_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -665,6 +689,7 @@ namespace NitroShelf.NitroShelf_XamlTypeInfo
                 userType = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_35_BooksPage;
                 userType.StaticInitializer = StaticInitializer_35_BooksPage;
+                userType.AddMemberName("Books");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -677,10 +702,37 @@ namespace NitroShelf.NitroShelf_XamlTypeInfo
                 xamlType = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 38:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 38:   //  System.Collections.ObjectModel.ObservableCollection`1<NitroShelf.Book>
+                userType = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<NitroShelf.Book>"));
+                userType.StaticInitializer = StaticInitializer_38_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_38_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 39:   //  System.Collections.ObjectModel.Collection`1<NitroShelf.Book>
+                userType = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_39_Collection;
+                userType.StaticInitializer = StaticInitializer_39_Collection;
+                userType.CollectionAdd = VectorAdd_39_Collection;
+                xamlType = userType;
+                break;
+
+            case 40:   //  NitroShelf.Book
+                userType = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_40_Book;
+                userType.StaticInitializer = StaticInitializer_40_Book;
+                userType.AddMemberName("Title");
+                userType.AddMemberName("Author");
+                userType.AddMemberName("Cover");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 41:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_38_TreeViewNode;
-                userType.StaticInitializer = StaticInitializer_38_TreeViewNode;
+                userType.Activator = Activate_41_TreeViewNode;
+                userType.StaticInitializer = StaticInitializer_41_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -692,15 +744,15 @@ namespace NitroShelf.NitroShelf_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 39:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 42:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_39_IList;
-                userType.CollectionAdd = VectorAdd_39_IList;
+                userType.StaticInitializer = StaticInitializer_42_IList;
+                userType.CollectionAdd = VectorAdd_42_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 40:   //  Int32
+            case 43:   //  Int32
                 xamlType = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -1217,52 +1269,92 @@ namespace NitroShelf.NitroShelf_XamlTypeInfo
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase)instance;
             that.IsSelected = (global::System.Boolean)Value;
         }
-        private object get_49_TreeViewNode_Children(object instance)
+        private object get_49_BooksPage_Books(object instance)
+        {
+            var that = (global::NitroShelf.BooksPage)instance;
+            return that.Books;
+        }
+        private void set_49_BooksPage_Books(object instance, object Value)
+        {
+            var that = (global::NitroShelf.BooksPage)instance;
+            that.Books = (global::System.Collections.ObjectModel.ObservableCollection<global::NitroShelf.Book>)Value;
+        }
+        private object get_50_Book_Title(object instance)
+        {
+            var that = (global::NitroShelf.Book)instance;
+            return that.Title;
+        }
+        private void set_50_Book_Title(object instance, object Value)
+        {
+            var that = (global::NitroShelf.Book)instance;
+            that.Title = (global::System.String)Value;
+        }
+        private object get_51_Book_Author(object instance)
+        {
+            var that = (global::NitroShelf.Book)instance;
+            return that.Author;
+        }
+        private void set_51_Book_Author(object instance, object Value)
+        {
+            var that = (global::NitroShelf.Book)instance;
+            that.Author = (global::System.String)Value;
+        }
+        private object get_52_Book_Cover(object instance)
+        {
+            var that = (global::NitroShelf.Book)instance;
+            return that.Cover;
+        }
+        private void set_52_Book_Cover(object instance, object Value)
+        {
+            var that = (global::NitroShelf.Book)instance;
+            that.Cover = (global::System.String)Value;
+        }
+        private object get_53_TreeViewNode_Children(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Children;
         }
-        private object get_50_TreeViewNode_Content(object instance)
+        private object get_54_TreeViewNode_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Content;
         }
-        private void set_50_TreeViewNode_Content(object instance, object Value)
+        private void set_54_TreeViewNode_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_51_TreeViewNode_Depth(object instance)
+        private object get_55_TreeViewNode_Depth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Depth;
         }
-        private object get_52_TreeViewNode_HasChildren(object instance)
+        private object get_56_TreeViewNode_HasChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasChildren;
         }
-        private object get_53_TreeViewNode_HasUnrealizedChildren(object instance)
+        private object get_57_TreeViewNode_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_53_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
+        private void set_57_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_54_TreeViewNode_IsExpanded(object instance)
+        private object get_58_TreeViewNode_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.IsExpanded;
         }
-        private void set_54_TreeViewNode_IsExpanded(object instance, object Value)
+        private void set_58_TreeViewNode_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_55_TreeViewNode_Parent(object instance)
+        private object get_59_TreeViewNode_Parent(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Parent;
@@ -1618,50 +1710,74 @@ namespace NitroShelf.NitroShelf_XamlTypeInfo
                 xamlMember.Getter = get_48_NavigationViewItemBase_IsSelected;
                 xamlMember.Setter = set_48_NavigationViewItemBase_IsSelected;
                 break;
+            case "NitroShelf.BooksPage.Books":
+                userType = (global::NitroShelf.NitroShelf_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NitroShelf.BooksPage");
+                xamlMember = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlMember(this, "Books", "System.Collections.ObjectModel.ObservableCollection`1<NitroShelf.Book>");
+                xamlMember.Getter = get_49_BooksPage_Books;
+                xamlMember.Setter = set_49_BooksPage_Books;
+                break;
+            case "NitroShelf.Book.Title":
+                userType = (global::NitroShelf.NitroShelf_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NitroShelf.Book");
+                xamlMember = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlMember(this, "Title", "String");
+                xamlMember.Getter = get_50_Book_Title;
+                xamlMember.Setter = set_50_Book_Title;
+                break;
+            case "NitroShelf.Book.Author":
+                userType = (global::NitroShelf.NitroShelf_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NitroShelf.Book");
+                xamlMember = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlMember(this, "Author", "String");
+                xamlMember.Getter = get_51_Book_Author;
+                xamlMember.Setter = set_51_Book_Author;
+                break;
+            case "NitroShelf.Book.Cover":
+                userType = (global::NitroShelf.NitroShelf_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NitroShelf.Book");
+                xamlMember = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlMember(this, "Cover", "String");
+                xamlMember.Getter = get_52_Book_Cover;
+                xamlMember.Setter = set_52_Book_Cover;
+                break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Children":
                 userType = (global::NitroShelf.NitroShelf_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
-                xamlMember.Getter = get_49_TreeViewNode_Children;
+                xamlMember.Getter = get_53_TreeViewNode_Children;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Content":
                 userType = (global::NitroShelf.NitroShelf_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_50_TreeViewNode_Content;
-                xamlMember.Setter = set_50_TreeViewNode_Content;
+                xamlMember.Getter = get_54_TreeViewNode_Content;
+                xamlMember.Setter = set_54_TreeViewNode_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Depth":
                 userType = (global::NitroShelf.NitroShelf_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_51_TreeViewNode_Depth;
+                xamlMember.Getter = get_55_TreeViewNode_Depth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasChildren":
                 userType = (global::NitroShelf.NitroShelf_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_52_TreeViewNode_HasChildren;
+                xamlMember.Getter = get_56_TreeViewNode_HasChildren;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasUnrealizedChildren":
                 userType = (global::NitroShelf.NitroShelf_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
-                xamlMember.Getter = get_53_TreeViewNode_HasUnrealizedChildren;
-                xamlMember.Setter = set_53_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Getter = get_57_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Setter = set_57_TreeViewNode_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.IsExpanded":
                 userType = (global::NitroShelf.NitroShelf_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_54_TreeViewNode_IsExpanded;
-                xamlMember.Setter = set_54_TreeViewNode_IsExpanded;
+                xamlMember.Getter = get_58_TreeViewNode_IsExpanded;
+                xamlMember.Setter = set_58_TreeViewNode_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Parent":
                 userType = (global::NitroShelf.NitroShelf_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::NitroShelf.NitroShelf_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember.Getter = get_55_TreeViewNode_Parent;
+                xamlMember.Getter = get_59_TreeViewNode_Parent;
                 xamlMember.SetIsReadOnly();
                 break;
             }
