@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "NitroShelf (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "NitroShelf (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
